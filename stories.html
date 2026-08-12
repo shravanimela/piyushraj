@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>मेरी कहानियाँ | Piyush Raj</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, "Noto Serif Devanagari", serif;
+            background: #f8f5ef;
+            color: #2d2d2d;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #2f241f;
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 38px;
+        }
+
+        header p {
+            color: #e7d7bd;
+            margin-top: 5px;
+        }
+
+        nav {
+            background: white;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2f241f;
+            font-weight: bold;
+            margin: 0 12px;
+        }
+
+        nav a:hover {
+            color: #a45c2c;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .title h2 {
+            font-size: 32px;
+            color: #6f3c26;
+        }
+
+        .title p {
+            margin-top: 8px;
+            color: #777;
+        }
+
+        .story-list {
+            display: grid;
+            gap: 20px;
+        }
+
+        .story-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .story-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .story-card h3 {
+            color: #6f3c26;
+            font-size: 23px;
+            margin-bottom: 8px;
+        }
+
+        .story-card p {
+            color: #666;
+        }
+
+        .read-btn {
+            display: inline-block;
+            margin-top: 15px;
+            background: #8b4d2f;
+            color: white;
+            padding: 9px 20px;
+            border-radius: 22px;
+            text-decoration: none;
+        }
+
+        .read-btn:hover {
+            background: #5f321f;
+        }
+
+        footer {
+            background: #2f241f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 7px;
+            }
+
+            .story-card h3 {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Piyush Raj</h1>
+    <p>कवि एवं लेखक</p>
+</header>
+
+<nav>
+    <a href="index.html">होम</a>
+    <a href="poems.html">कविताएँ</a>
+    <a href="stories.html">कहानियाँ</a>
+    <a href="about.html">मेरे बारे में</a>
+    <a href="contact.html">संपर्क</a>
+</nav>
+
+<div class="container">
+
+    <div class="title">
+        <h2>📖 मेरी कहानियाँ</h2>
+        <p>मेरी लिखी हुई कहानियों का संग्रह</p>
+    </div>
+
+    <div class="story-list">
+
+        <div class="story-card">
+
+            <h3>कहानी 01 — मेरी पहली कहानी</h3>
+
+            <p>
+                इस कहानी के बारे में एक छोटा-सा परिचय यहाँ दिखाई देगा।
+                पाठक चाहें तो नीचे क्लिक करके पूरी कहानी पढ़ सकते हैं।
+            </p>
+
+            <a class="read-btn" href="story-001.html">
+                पूरी कहानी पढ़ें →
+            </a>
+
+        </div>
+
+
+        <div class="story-card">
+
+            <h3>कहानी 02 — दूसरी कहानी</h3>
+
+            <p>
+                यहाँ आपकी दूसरी कहानी का छोटा परिचय दिखाई देगा।
+            </p>
+
+            <a class="read-btn" href="story-002.html">
+                पूरी कहानी पढ़ें →
+            </a>
+
+        </div>
+
+
+        <div class="story-card">
+
+            <h3>कहानी 03 — तीसरी कहानी</h3>
+
+            <p>
+                यहाँ आपकी तीसरी कहानी का छोटा परिचय दिखाई देगा।
+            </p>
+
+            <a class="read-btn" href="story-003.html">
+                पूरी कहानी पढ़ें →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Piyush Raj | कवि एवं लेखक</p>
+</footer>
+
+</body>
+</html>
