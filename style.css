@@ -477,3 +477,38 @@ footer p {
         width: 100%;
     }
   }
+/* =========================
+   PROFILE PHOTO
+========================= */
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-circle {
+    width: 145px;
+    height: 145px;
+    margin: 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #c69c5d;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.15);
+}
+
+.profile-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile h2 {
+    margin-top: 15px;
+    color: #6f3c26;
+}
+
+.profile p {
+    color: #777;
+}
+
