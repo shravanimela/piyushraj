@@ -1,0 +1,479 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #6f3c26;
+    --primary-dark: #472417;
+    --gold: #c69c5d;
+    --cream: #f8f5ef;
+    --white: #ffffff;
+    --text: #2d2d2d;
+    --muted: #777;
+    --border: #eadfd2;
+    --shadow: 0 8px 30px rgba(47, 36, 31, 0.08);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, "Noto Serif Devanagari", serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.8;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background:
+        linear-gradient(
+            rgba(47, 36, 31, 0.92),
+            rgba(47, 36, 31, 0.92)
+        );
+    color: var(--white);
+    text-align: center;
+    padding: 55px 20px;
+}
+
+header h1 {
+    font-size: 44px;
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #e7d7bd;
+    font-size: 19px;
+    margin-top: 5px;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+    background: var(--white);
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--primary-dark);
+    font-weight: bold;
+    margin: 4px 12px;
+    padding: 4px 2px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    max-width: 1000px;
+    margin: 55px auto;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 38px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.hero p {
+    max-width: 750px;
+    margin: auto;
+    font-size: 19px;
+    color: #555;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.buttons {
+    margin-top: 30px;
+}
+
+.btn,
+.read-btn {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    padding: 11px 23px;
+    margin: 6px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover,
+.read-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.section {
+    max-width: 1050px;
+    margin: 50px auto;
+    padding: 25px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    color: var(--primary);
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: var(--white);
+    padding: 30px;
+    width: 300px;
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+/* =========================
+   PAGE CONTAINER
+========================= */
+
+.container,
+.poem-container {
+    max-width: 950px;
+    margin: 45px auto;
+    padding: 20px;
+}
+
+/* =========================
+   PAGE TITLE
+========================= */
+
+.title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.title h2 {
+    color: var(--primary);
+    font-size: 34px;
+}
+
+.title p {
+    color: var(--muted);
+}
+
+/* =========================
+   POEMS & STORIES
+========================= */
+
+.poem-list,
+.story-list {
+    display: grid;
+    gap: 20px;
+}
+
+.poem-card,
+.story-card {
+    background: var(--white);
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.poem-card:hover,
+.story-card:hover {
+    transform: translateY(-3px);
+}
+
+.poem-card h3,
+.story-card h3 {
+    color: var(--primary);
+    margin-bottom: 6px;
+}
+
+.poem-card p,
+.story-card p {
+    color: var(--muted);
+}
+
+/* =========================
+   POEM PAGE
+========================= */
+
+.poem {
+    background: var(--white);
+    padding: 50px 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.poem-title {
+    text-align: center;
+    color: var(--primary);
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.author {
+    text-align: center;
+    color: var(--muted);
+    margin-bottom: 35px;
+}
+
+.poem-text {
+    font-size: 20px;
+    text-align: center;
+    white-space: pre-line;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-card,
+.contact-card {
+    background: var(--white);
+    padding: 45px;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+}
+
+.profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.profile-circle {
+    width: 145px;
+    height: 145px;
+    margin: auto;
+    border-radius: 50%;
+    background: #eadbc5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 55px;
+}
+
+.profile h2 {
+    margin-top: 15px;
+    color: var(--primary);
+}
+
+.about-text {
+    font-size: 18px;
+}
+
+.about-text h3 {
+    color: var(--primary);
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+/* =========================
+   CONTACT FORM
+========================= */
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid var(--border);
+    border-radius: 9px;
+    font-family: inherit;
+    font-size: 16px;
+    background: #fffdf9;
+}
+
+textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 13px;
+    border: none;
+    border-radius: 30px;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 17px;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--primary-dark);
+}
+
+/* =========================
+   SHARE
+========================= */
+
+.share {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.share a {
+    display: inline-block;
+    background: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+/* =========================
+   BACK LINK
+========================= */
+
+.back {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #2f241f;
+    color: var(--white);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 3px 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header p {
+        font-size: 17px;
+    }
+
+    nav a {
+        margin: 4px 6px;
+        font-size: 15px;
+    }
+
+    .hero {
+        margin: 35px auto;
+    }
+
+    .hero h2 {
+        font-size: 29px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .poem,
+    .about-card,
+    .contact-card {
+        padding: 28px 20px;
+    }
+
+    .poem-title {
+        font-size: 28px;
+    }
+
+    .poem-text {
+        font-size: 18px;
+    }
+
+    .about-text {
+        font-size: 17px;
+    }
+
+    .card {
+        width: 100%;
+    }
+  }
